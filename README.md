@@ -69,10 +69,10 @@ body {
     background-color: #121212;
     color: white;
 }
-📌 Navbar
-css
-Copy
-Edit
+```
+
+### 📌 Navbar
+```css
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -80,50 +80,49 @@ Edit
     background-color: #1e1e1e;
     padding: 15px;
 }
+
 .app-name {
     font-size: 24px;
     color: white;
 }
+
 .logout-button {
     background-color: red;
     padding: 8px 15px;
     font-size: 14px;
     border-radius: 5px;
 }
-🚗 Create Ride Form
-css
-Copy
-Edit
+```
+
+### 🚗 Create Ride Form
+```css
 .create-ride-container {
     background-color: #1e1e1e;
     color: white;
     border-radius: 8px;
 }
+
 button:hover {
     background-color: #cc3700;
 }
-🚀 Upcoming Features
+```
+
+## 🚀 Upcoming Features
 ✅ Deploy the backend & frontend.
 
 ✅ Add a messaging feature between drivers & riders.
 
 ✅ Enhance UI animations for a smoother experience.
 
-🛠 Tech Stack
-Frontend: React, CSS
+## 🛠 Tech Stack
+- **Frontend:** React, CSS
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **APIs:** Google Maps, OpenCage Geocoder
+- **Hosting:** To be decided
 
-Backend: Node.js, Express.js
-
-Database: MongoDB
-
-APIs: Google Maps, OpenCage Geocoder
-
-Hosting: To be decided
-
-🔥 How to Run the Project
-bash
-Copy
-Edit
+## 🔥 How to Run the Project
+```bash
 # Clone the repository
 git clone https://github.com/your-repo/carpooling-app.git
 
@@ -137,9 +136,12 @@ npm start
 # Start the backend
 cd backend
 npm run dev
-📌 Notes
-Ensure that .env file contains REACT_APP_OPENCAGE_API_KEY for location services.
+```
 
-Update MongoDB connection string in the backend.
+## 📌 Notes
+- Ensure that `.env` file contains `REACT_APP_OPENCAGE_API_KEY` for location services.
+- Update MongoDB connection string in the backend.
 
-🚀 Happy Carpooling! 🏁
+🚀 **Happy Carpooling!** 🏁
+
+
