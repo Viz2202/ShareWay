@@ -58,6 +58,7 @@ A **dark-themed** ride-sharing web application where users can create and manage
   - Handle ride requests.
   - Store user and ride data in the database.
   - Use **OpenCage API** for location coordinates.
+  - **End-to-End** messaging between the accepted user and drivers.
 
 ---
 
