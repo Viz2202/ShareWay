@@ -1,0 +1,92 @@
+.create-ride-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1e1e1e; /* Dark background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1); /* Soft white glow */
+  color: #ffffff; /* White text */
+}
+
+h2 {
+  text-align: center;
+  color: #ffffff; /* White text */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #cccccc; /* Lighter text for labels */
+}
+
+input, select, textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #555555; /* Darker border */
+  background-color: #333333; /* Dark input background */
+  color: #ffffff; /* White text */
+  border-radius: 4px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #aaaaaa; /* Light grey placeholder */
+}
+
+/* General buttons */
+button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #ff4500; /* Bright orange-red */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #cc3700; /* Slightly darker on hover */
+}
+
+.stop-details {
+  background-color: #292929; /* Dark grey background */
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1); /* White glow effect */
+}
+
+input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  accent-color: #ff4500; /* Highlight checkbox in orange-red */
+}
+
+/* Logout Button - Red */
+.logout-button {
+  background-color: red !important;
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.logout-button:hover {
+  background-color: darkred !important;
+}
+
+/* Adjust "Go Back" button */
+button:last-child {
+  background-color: #444444; /* Dark grey */
+}
+
+button:last-child:hover {
+  background-color: #666666; /* Lighter grey on hover */
+}
