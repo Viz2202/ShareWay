@@ -1,0 +1,29 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    padding: 12px 25px; /* Increased padding */
+    color: white;
+    height: 60px; /* Increased height */
+    width: 100%; /* Ensure navbar spans full width */
+    box-sizing: border-box;
+}
+
+.app-name {
+    font-size: 1.7rem; /* Slightly larger font */
+    font-weight: bold;
+    margin: 0;
+}
+
+.logout-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 9px 18px; /* Slightly larger padding */
+    cursor: pointer;
+    font-size: 1.1rem; /* Slightly larger font */
+    border-radius: 5px;
+    width: 90px; /* Increased width */
+    text-align: center;
+}

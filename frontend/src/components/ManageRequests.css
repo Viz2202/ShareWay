@@ -1,0 +1,126 @@
+.manage-requests-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ddd;
+    background-color: #1e1e1e;
+}
+
+.manage-requests-container h2 {
+    color: #f1c40f;
+    font-size: 26px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Request List Styling */
+.requests-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Individual Request Card */
+.request-card {
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+    border-left: 5px solid #f1c40f;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.request-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(255, 255, 255, 0.15);
+}
+
+/* Ride details */
+.request-card p {
+    margin: 8px 0;
+    color: #bbb;
+}
+
+.request-card p strong {
+    color: #f1c40f;
+}
+
+/* Status Styling */
+.request-status {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.status-accepted {
+    color: green;
+}
+
+.status-pending {
+    color: orange;
+}
+
+.status-rejected {
+    color: red;
+}
+
+/* Action Buttons */
+.request-actions {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.request-btn {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.request-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Accept Button */
+.accept-btn {
+    background-color: green;
+    color: white;
+}
+
+.accept-btn:hover {
+    background-color: #27ae60;
+}
+
+/* Reject Button */
+.reject-btn {
+    background-color: red;
+    color: white;
+}
+
+.reject-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Message Button */
+.message-btn {
+    background-color: #0084ff;
+    color: white;
+}
+
+.message-btn:hover {
+    background-color: #006bb3;
+}
+
+/* Empty State */
+.no-requests {
+    text-align: center;
+    background-color: #2c2c2c;
+    padding: 20px;
+    border-radius: 8px;
+    color: #7f8c8d;
+    font-size: 16px;
+    margin-top: 20px;
+}

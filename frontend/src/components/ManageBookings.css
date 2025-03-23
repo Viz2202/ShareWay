@@ -1,0 +1,240 @@
+/* Page Container */
+.manage-bookings-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212; /* Dark background */
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Title Styling */
+.manage-bookings-container h2 {
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+/* Grid Layout */
+.booking-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Booking Card */
+.booking-card {
+    width: 250px;
+    height: 250px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #444;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    position: relative;
+    color: #ffffff; /* Add this line to make all text white by default */
+}
+
+/* Add these specific rules to ensure all text elements are white */
+.booking-card p,
+.booking-card span,
+.booking-card strong,
+.booking-card div {
+    color: #ffffff;
+}
+
+/* You already have these color properties, but make sure they're at #ffffff */
+.booking-summary {
+    color: #ffffff;
+}
+
+.booking-details {
+    color: #ffffff;
+}
+
+.booking-details p strong {
+    color: #ffffff;
+}
+/* Expanded card handling */
+.booking-card.expanded {
+    height: auto;
+    min-height: 250px;
+}
+
+/* Glow Effect on Hover */
+.booking-card:hover {
+    background-color: #292929;
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.3);
+    color: white;
+}
+
+/* Booking Summary */
+.booking-summary {
+    font-size: 14px; /* Reduced from 16px */
+    font-weight: bold;
+    color: #ffffff;
+    width: 100%;
+    text-align: center;
+    line-height: 1.5; /* Reduced from 1.8 */
+    margin-top: 10px; /* Add space at top */
+}
+
+.booking-summary p {
+    margin: 5px 0; /* Reduce vertical spacing */
+    white-space: nowrap; /* Prevent wrapping within one line */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+}
+
+/* Expanded Booking Details */
+.booking-details {
+    margin-top: 15px;
+    font-size: 13px; /* Reduced from 14px */
+    width: 100%;
+    text-align: left;
+    color: #ffffff;
+    line-height: 1.4; /* Reduced from 1.6 */
+    padding: 0 5px; /* Reduced padding */
+}
+
+.booking-details p {
+    margin: 5px 0;
+    white-space: normal; /* Allow wrapping */
+    overflow: hidden;
+}
+
+/* Make strong tags stand out properly */
+.booking-details p strong {
+    color: #ffffff;
+    font-weight: 600;
+    display: inline-block;
+    min-width: 80px; /* Reduced from 90px */
+}
+
+/* Pop-up Modal */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+
+.modal-overlay.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #1e1e1e;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .booking-grid {
+        padding: 0 10px;
+    }
+    
+    .booking-card {
+        width: 220px;
+        height: 220px;
+    }
+    
+    .booking-summary {
+        font-size: 12px;
+    }
+    
+    .booking-details {
+        font-size: 11px;
+    }
+    
+    .booking-details p strong {
+        min-width: 70px;
+    }
+}
+/* Make all text in modal white */
+.modal-content,
+.modal-content p,
+.modal-content h3,
+.modal-content span,
+.modal-content strong {
+    color: #ffffff;
+}
+
+/* Modal Close Button */
+.modal-content .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none; /* Remove background */
+    border: none;
+    color: white; /* Keep visible */
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px;
+    transition: color 0.2s ease-in-out;
+}
+
+/* Prevent hover from affecting the close button */
+.modal-content .close-btn:hover {
+    color: red; /* Slight fade effect */
+}
+
+/* Only style normal buttons inside modal, not the close button */
+.modal-content button:not(.close-btn) {
+    width: 90%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.2s;
+}
+
+/* Button Hover (excluding the close button) */
+.modal-content button:not(.close-btn):hover {
+    background-color: #0069d9;
+}

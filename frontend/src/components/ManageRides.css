@@ -1,0 +1,89 @@
+.manage-rides-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #1e1e1e; /* Dark background */
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #ffcc00; /* Yellow heading */
+}
+
+.rides-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ride-box {
+  background: #2b2b2b;
+  border-left: 5px solid #ffcc00;
+  padding: 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, background 0.3s;
+  position: relative;
+}
+
+.ride-box:hover {
+  transform: scale(1.02);
+  background: #333;
+}
+
+.ride-summary {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+.ride-details {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: red;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px; /* Fixed size */
+  height: 30px; /* Fixed size */
+}
+
+.delete-icon:hover {
+  background: darkred;
+  transform: scale(1.1);
+}
+
+
+button {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  background: #0084ff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #006acc;
+}

@@ -1,0 +1,118 @@
+/* Apply a dark theme background */
+body {
+  background: #121212;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+  background: #1e1e1e;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  max-width: 400px;  /* Box width */
+  background: #181818;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  margin: 50px auto;  /* Centers the box */
+  position: relative;  /* Needed for absolute positioning of GIF */
+  z-index: 2; /* Ensures it's above the GIF */
+}
+
+.dashboard-container h2 {
+  color: #fff;
+}
+/* User Info (Name & Role Section) */
+.user-info {
+  background: #222222;
+  padding: 15px;
+  border-radius: 8px;
+  width: 100%;  /* Stays within the parent */
+  box-sizing: border-box;
+  margin-bottom: 15px;
+}
+
+.user-info h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #efeded;
+}
+
+.user-info p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #bbb;
+}
+
+.user-info p strong {
+  color: #fff;
+}
+
+/* Buttons Section */
+.action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;  /* Ensures even spacing */
+}
+
+/* General Button Styling */
+.dashboard-btn {
+  background: #333;
+  color: #fff;
+  padding: 12px 0;
+  border: none;
+  border-radius: 6px;
+  width: 100%;  /* Makes all buttons equal width */
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+  font-weight: bold;
+}
+
+.dashboard-btn:hover {
+  background: #444;
+}
+
+/* Logout Button (Red) */
+.logout-btn {
+  background: #c0392b;
+}
+
+.logout-btn:hover {
+  background: #e74c3c;
+}
+
+/* Car GIF Styling */
+.car-gif {
+  display: block;
+  margin: -100px auto 0;  /* Ensures spacing from the last button */
+  width: 360px;  /* Adjust size */
+  opacity: 0.8;
+  mix-blend-mode: screen;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 450px) {
+  .dashboard-container {
+      max-width: 90%;
+      margin: 20px auto;
+  }
+
+  .car-gif {
+      width: 120px; /* Adjusts size for smaller screens */
+      bottom: -40px;
+  }
+}

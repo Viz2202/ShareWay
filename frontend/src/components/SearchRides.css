@@ -1,0 +1,107 @@
+html, body {
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Full-page styling */
+.search-rides-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Allow content to push down */
+  min-height: 100vh; /* Instead of fixed height */
+  background-color: #121212;
+  color: white;
+  padding: 30px;
+  overflow-y: auto; /* Enables scrolling */
+}
+
+/* Form container */
+.ride-form {
+  width: 100%;
+  max-width: 450px; /* Adjust for better layout */
+  background-color: #1e1e1e; /* Slightly lighter than background */
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Form heading */
+.search-rides-container h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* Form groups */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label styling */
+.form-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Input fields */
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: #1e1e1e; /* Darker background */
+  color: white;
+  border: 1px solid #444;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Fix input placeholder color */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Highlight input on focus */
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #007bff;
+  outline: none;
+  background-color: #2a2a2a;
+}
+
+/* Preferences section */
+.preferences-section {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #252525;
+  border-radius: 8px;
+}
+
+/* Checkbox styling */
+.form-group input[type="checkbox"] {
+  width: auto;
+  margin-left: 10px;
+}
+
+/* Submit button */
+.submit-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.submit-button:hover {
+  background-color: #0069d9;
+}
