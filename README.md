@@ -111,7 +111,7 @@ button:hover {
 ## 🚀 Upcoming Features
 ✅ Deploy the backend & frontend.
 
-✅ Add a messaging feature between drivers & riders.
+✅ Imporving the coordinate system.
 
 ✅ Enhance UI animations for a smoother experience.
 
@@ -119,8 +119,8 @@ button:hover {
 - **Frontend:** React, CSS
 - **Backend:** Node.js, Express.js
 - **Database:** MongoDB
-- **APIs:** Google Maps, OpenCage Geocoder
-- **Hosting:** To be decided
+- **APIs:** OpenCage Geocoder
+- **Hosting:** To be decided(Currently localhost)
 
 ## 🔥 How to Run the Project
 ```bash
