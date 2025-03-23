@@ -128,18 +128,21 @@ git clone https://github.com/Viz2202/MoveInSync.git
 
 # Install dependencies
 cd carpooling-app
-npm install
 
 # Start the frontend
+cd frontend
+npm install
 npm start
 
 # Start the backend
 cd backend
-npm run dev
+npm install
+npm start
 ```
 
 ## 📌 Notes
 - Ensure that `.env` file contains `REACT_APP_OPENCAGE_API_KEY` for location services.
+- this also would require a `jwt_secret_key`
 - Update MongoDB connection string in the backend.
 
 🚀 **Happy Carpooling!** 🏁
