@@ -124,7 +124,7 @@ button:hover {
 ## 🔥 How to Run the Project
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/carpooling-app.git
+git clone https://github.com/Viz2202/MoveInSync.git
 
 # Install dependencies
 cd carpooling-app
